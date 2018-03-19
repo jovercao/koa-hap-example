@@ -2,7 +2,7 @@
 
 <head>
   <title>koa-hap-example</title>
-  <script src="./hap.js"></script>
+  <script src="../node_modules/koa-hap-client/dist/hap.js"></script>
 </head>
 
 <body>
@@ -11,15 +11,14 @@
     var api = hap.create('/api', {
 
     });
-    function test(params) {
-      let data = api.hello({ name: 'World' }).then(function (result) {
-        document.getElementById('x').innerText = result.data;
-      })
-      .catch(function(err) {
-        console.log(err);
-      });
-    }
-    test();
+
+    let data = api.hello({ name: 'World' }).then(function (result) {
+      document.getElementById('x').innerText = result.data;
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+    
   </script>
 </body>
 

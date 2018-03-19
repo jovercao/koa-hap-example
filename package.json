@@ -12,6 +12,7 @@
   "dependencies": {
     "koa": "^2.5.0",
     "koa-hap": "^0.1.3",
+    "koa-hap-client": "^0.1.3",
     "koa-static": "^4.0.2"
   },
   "devDependencies": {
