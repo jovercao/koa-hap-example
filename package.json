@@ -1,0 +1,23 @@
+{
+  "name": "koa-hap-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ."
+  },
+  "author": "jover",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-hap": "^0.1.3",
+    "koa-static": "^4.0.2"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "mocha": "^5.0.4",
+    "power-assert": "^1.4.4",
+    "webpack": "^4.1.1"
+  }
+}
