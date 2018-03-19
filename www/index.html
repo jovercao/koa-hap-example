@@ -2,14 +2,19 @@
 
 <head>
   <title>koa-hap-example</title>
-  <script src="../node_modules/koa-hap-client/dist/hap.js"></script>
+  <!-- this file is copy from ../node_modules/koa-hap-client/dist/hap.j -->
+  <!-- if use webpack, not need do that. -->
+  <script src="hap.js"></script>
 </head>
 
 <body>
   <h1 id="x"></h1>
   <script>
-    var api = hap.create('/api', {
-
+    var api = hap('/api', {
+      headers: {
+        'custom-header': 'value'
+      }
+      // ...
     });
 
     let data = api.hello({ name: 'World' }).then(function (result) {
@@ -18,7 +23,7 @@
     .catch(function(err) {
       console.log(err);
     });
-    
+
   </script>
 </body>
 

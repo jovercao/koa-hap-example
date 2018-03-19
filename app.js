@@ -14,6 +14,7 @@ app.use(
   })
 );
 
+app.use(koaStatic('node_modules/koa-hap-client/dist', {}));
 app.use(koaStatic('www', {
   defer: true
 }));
